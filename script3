@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -e file3.txt ]
+then
+
+echo "Do you want to delete the file?"
+echo "Yes (y) / No (n)"
+
+read answer
+
+if [ $answer == y ]
+then
+sudo rm file3.txt
+fi
+
+else [ $answer == n]
+echo "I keep the file"
+fi
+
+exec&> file3.txt
+who
+hostname --ip-address
+
+
+

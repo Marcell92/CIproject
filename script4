@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Write a number to find out whether it is a prime"
+
+read num
+
+counter=0
+
+for (( j=2;j<$num;j++ ))
+do
+if [ $((num%j)) -eq 0 ]
+then 
+((counter++))
+fi
+done
+
+if [ $counter -eq 0 ]
+then
+echo "This number $num is a prime"
+else
+echo "This number $num is not a prime"
+fi

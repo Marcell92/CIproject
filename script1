@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read filename
+
+if [ -e $filename ]
+then
+        mv $filename $filename.sh
+        sudo chmod +x $filename.sh
+else
+        echo "$filename not found."
+fi
+

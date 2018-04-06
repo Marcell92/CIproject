@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+exec&> file2.txt
+ls
+sudo mv file2.txt /etc/shared
+
